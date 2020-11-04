@@ -14,7 +14,7 @@ import '../assets/stylesheets/application.scss';
 import messagesReducer from './reducers/messagesListReducer';
 import selectedChannelReducer from './reducers/channelReducer';
 
-
+const identityReducer = (state = null) => state;
 // State and reducers
 const initialState = {
   messages: [],
@@ -35,6 +35,8 @@ const initialState = {
 };
 const reducers = combineReducers({
   messages: messagesReducer,
+  channels: identityReducer,
+  currentUser: identityReducer,
   selectedChannel: selectedChannelReducer
 });
 

@@ -3,7 +3,7 @@ const BASE_URL = 'https://wagon-chat.herokuapp.com';
 
 export const FETCH_MESSAGES = 'FETCH_MESSAGES';
 export const MESSAGE_POSTED = 'MESSAGE_POSTED';
-export const SET_CHANNEL = 'SET_CHANNEL';
+export const CHANNEL_SELECTED = 'CHANNEL_SELECTED';
 
 export function fetchMessages(channel) {
   const url = `${BASE_URL}/${channel}/messages`;
@@ -34,7 +34,7 @@ export function createMessage(channel, author, content) {
 
 export function selectChannel(channel) {
   return {
-    type: SET_CHANNEL,
+    type: CHANNEL_SELECTED,
     payload: channel
   };
 }

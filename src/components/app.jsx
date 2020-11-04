@@ -4,10 +4,10 @@ import MessageList from '../containers/messageList';
 
 const App = () => {
   return (
-    <div className="messaginWrapper">
-      <div className="logo-container">
+    <div className="messaging-wrapper">
+      {/* <div className="logo-container">
         <img className="messaging-logo" src="assets/images/logo.svg" alt="logo" />
-      </div>
+      </div> */}
       <ChannelList />
       <MessageList />
     </div>
